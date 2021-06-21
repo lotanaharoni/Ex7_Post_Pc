@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ex7_PostPc</string>
+    <string name="new_order_title">Order a new Sandwich</string>
+    <string name="pickels_title">Choose how many pickels up to 10</string>
+    <string name="type_pickels">Type amount</string>
+    <string name="add_Hummus">Add Hummus</string>
+    <string name="add_Tahini">Add Tahini</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="send_order_button">Send order</string>
 </resources>
