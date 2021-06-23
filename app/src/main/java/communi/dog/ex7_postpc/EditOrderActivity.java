@@ -35,6 +35,14 @@ public class EditOrderActivity extends AppCompatActivity {
         userComment = findViewById(R.id.AddCommentEditText);
         sendOrderButton = findViewById(R.id.sendOrderButton);
         deleteOrderButton = findViewById(R.id.deleteOrderButton);
+
+        sendOrderButton.setOnClickListener(view -> {
+
+        });
+
+        deleteOrderButton.setOnClickListener(view -> {
+
+        });
     }
 
     @Override

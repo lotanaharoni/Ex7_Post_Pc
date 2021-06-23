@@ -35,6 +35,10 @@ public class NewOrderActivity extends AppCompatActivity {
         isTahiniChecked = findViewById(R.id.TahiniCheckbox);
         userComment = findViewById(R.id.AddCommentEditText);
         sendOrderButton = findViewById(R.id.sendOrderButton);
+
+        sendOrderButton.setOnClickListener(view -> {
+
+        });
     }
 
     @Override
