@@ -2,9 +2,12 @@ package communi.dog.ex7_postpc;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,7 +40,30 @@ public class NewOrderActivity extends AppCompatActivity {
         sendOrderButton = findViewById(R.id.sendOrderButton);
 
         sendOrderButton.setOnClickListener(view -> {
+            if (customerName.getText().toString().equals("")){
+                Toast.makeText(this, "@string/empty_customer_name_error", Toast.LENGTH_SHORT).show();
+                // Problem
+            } else {
+                
+            }
 
+        });
+
+        customerName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
         });
     }
 
