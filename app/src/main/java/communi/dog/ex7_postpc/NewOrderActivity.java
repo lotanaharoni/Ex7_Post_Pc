@@ -12,10 +12,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
 
 public class NewOrderActivity extends AppCompatActivity {
 
     MyLocalDb myLocalDb = null;
+    LiveData<Order> ordersLiveData;
     EditText customerName;
     EditText pickelsAmount;
     CheckBox isHumusChecked;
@@ -31,6 +33,7 @@ public class NewOrderActivity extends AppCompatActivity {
         if (myLocalDb == null){
             myLocalDb = MyAppActivity.getLocalDb();
         }
+      //  ordersLiveData = myLocalDb.get...
 
         customerName = findViewById(R.id.CustomerName);
         pickelsAmount = findViewById(R.id.PickelsEditText);
@@ -44,7 +47,7 @@ public class NewOrderActivity extends AppCompatActivity {
                 Toast.makeText(this, "@string/empty_customer_name_error", Toast.LENGTH_SHORT).show();
                 // Problem
             } else {
-                
+
             }
 
         });
